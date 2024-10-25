@@ -1,0 +1,36 @@
+name: Build Unity Project
+
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    # Checkout the repository
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    # Setup Unity
+    - name: Set up Unity
+      uses: game-ci/unity-setup@v2
+      with:
+        unityVersion: 2022.3.0f1
+
+    # Build the project
+    - name: Build project
+      uses: game-ci/unity-builder@v2
+      with:
+        targetPlatform: WebGL
+
+    # Upload build artifacts
+    - name: Upload WebGL Build Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: WebGL Build
+        path: build/WebGL
