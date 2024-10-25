@@ -1,0 +1,116 @@
+TheDesertJourney/
+├── Assets/
+│   ├── Animations/
+│   │   ├── Car/
+│   │   │   ├── carIdle.anim
+│   │   │   ├── carDriving.anim
+│   │   │   └── carExit.anim
+│   │   ├── Player/
+│   │   │   ├── playerIdle.anim
+│   │   │   ├── playerWalking.anim
+│   │   │   └── playerCollecting.anim
+│   │   └── Environment/
+│   │       ├── tumbleweed.anim
+│   │       ├── sandStorm.anim
+│   │       └── sunCycle.anim
+│   ├── Audio/
+│   │   ├── Music/
+│   │   │   ├── introMusic.mp3
+│   │   │   ├── desertAmbience.mp3
+│   │   │   └── drivingLoop.mp3
+│   │   ├── SFX/
+│   │   │   ├── carStart.wav
+│   │   │   ├── footstepsSand.wav
+│   │   │   ├── itemPickup.wav
+│   │   │   ├── doorOpen.wav
+│   │   │   └── carEngineLoop.wav
+│   ├── Fonts/
+│   │   └── mainFont.ttf
+│   ├── Materials/
+│   │   ├── carMaterial.mat
+│   │   ├── desertMaterial.mat
+│   │   ├── roadMaterial.mat
+│   │   └── playerMaterial.mat
+│   ├── Models/
+│   │   ├── Car/
+│   │   │   ├── carModel.fbx
+│   │   │   └── carTexture.png
+│   │   ├── Player/
+│   │   │   ├── playerModel.fbx
+│   │   │   └── playerTexture.png
+│   │   ├── Environment/
+│   │   │   ├── cactus.fbx
+│   │   │   ├── rock.fbx
+│   │   │   ├── tumbleweed.fbx
+│   │   │   └── gasStationModel.fbx
+│   │   └── Items/
+│   │       ├── fuelCan.fbx
+│   │       ├── waterBottle.fbx
+│   │       └── toolbox.fbx
+│   ├── Prefabs/
+│   │   ├── Car.prefab
+│   │   ├── Player.prefab
+│   │   ├── Environment/
+│   │   │   ├── Cactus.prefab
+│   │   │   ├── Rock.prefab
+│   │   │   └── Tumbleweed.prefab
+│   │   └── Items/
+│   │       ├── FuelCan.prefab
+│   │       ├── WaterBottle.prefab
+│   │       └── Toolbox.prefab
+│   ├── Scenes/
+│   │   ├── MainMenu.unity
+│   │   ├── Desert.unity
+│   │   ├── CarInterior.unity
+│   │   └── GasStation.unity
+│   ├── Scripts/
+│   │   ├── PlayerController.cs
+│   │   ├── CarController.cs
+│   │   ├── ItemPickup.cs
+│   │   ├── GameManager.cs
+│   │   ├── UI/
+│   │   │   ├── InventoryUI.cs
+│   │   │   ├── HealthUI.cs
+│   │   │   └── FuelGaugeUI.cs
+│   │   └── Environment/
+│   │       ├── DayNightCycle.cs
+│   │       ├── WeatherManager.cs
+│   │       └── InteractionManager.cs
+│   ├── Sprites/
+│   │   ├── UI/
+│   │   │   ├── inventoryIcon.png
+│   │   │   ├── healthBar.png
+│   │   │   └── fuelGauge.png
+│   │   └── Environment/
+│   │       ├── skyboxDay.png
+│   │       ├── skyboxNight.png
+│   │       └── desertBackground.png
+│   ├── Textures/
+│   │   ├── carTexture.png
+│   │   ├── desertTexture.png
+│   │   ├── playerTexture.png
+│   │   └── itemTextures/
+│   │       ├── fuelCanTexture.png
+│   │       ├── waterBottleTexture.png
+│   │       └── toolboxTexture.png
+│   └── UI/
+│       ├── MainMenuUI.prefab
+│       ├── PauseMenuUI.prefab
+│       ├── GameOverUI.prefab
+│       └── HUDCanvas.prefab
+├── Build/
+│   ├── Windows/
+│   │   └── DesertJourney.exe
+│   ├── Mac/
+│   │   └── DesertJourney.app
+│   └── WebGL/
+│       ├── index.html
+│       ├── build.js
+│       └── build.wasm
+├── ProjectSettings/
+│   ├── InputManager.asset
+│   ├── TagsAndLayers.asset
+│   ├── TimeManager.asset
+│   └── QualitySettings.asset
+├── README.md
+└── .gitignore
